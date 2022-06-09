@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace MeetupClone;
+namespace MeetupClone.Models;
 
 [Index(nameof(Email), IsUnique = true)]
 public class Member
@@ -11,7 +11,7 @@ public class Member
 
     [Required]
     public string FirstName { get; set; }
-    
+
     [Required]
     public string LastName { get; set; }
 
@@ -23,7 +23,7 @@ public class Member
             return FirstName + " " + LastName;
         }
     }
-    
+
     [Required]
     public string Email { get; set; }
 }
