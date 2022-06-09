@@ -1,8 +1,10 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.EntityFrameworkCore;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace MeetupClone;
 
+[Index(nameof(Email), IsUnique = true)]
 public class Member
 {
     public int Id { get; set; }
