@@ -22,6 +22,7 @@ public class MeetingGroup
     [Required]
     public Boolean IsPublic { get; set; } = true;
 
+    [Required]
     [MinLength(32)]
     public string Description { get; set; }
 
