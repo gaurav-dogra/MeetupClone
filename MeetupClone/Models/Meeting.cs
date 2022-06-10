@@ -19,7 +19,14 @@ public class Meeting
 
     [Required]
     public DateTime DateTime { get; set; }
+    
+    [Required]
+    public Boolean IsLimitedAttendees { get; set; }
 
+    public int Limit { get; set; }
     public List<Member> Hosting { get; set; }
-    public List<Member> Going { get; set; }
+    public List<Member> Attendies { get; set; }
+    public List<Member> NotAttendies { get; set; }
+    public List<Member> Waiting { get; set; }
+
 }
