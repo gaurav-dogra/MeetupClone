@@ -26,4 +26,5 @@ public class MeetingGroup
     public string Description { get; set; }
 
     public List<Member> Members { get; set; }
+    public List<Member> Organizers { get; set; }
 }
