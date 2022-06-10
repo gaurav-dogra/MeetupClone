@@ -25,8 +25,10 @@ public class Meeting
 
     public int Limit { get; set; }
     public List<Member> Hosting { get; set; }
-    public List<Member> Attendies { get; set; }
-    public List<Member> NotAttendies { get; set; }
+    public List<Member> Attendees { get; set; }
+    public List<Member> NotAttendees { get; set; }
     public List<Member> Waiting { get; set; }
+
+    public List<Comment> Comments { get; set; }
 
 }
