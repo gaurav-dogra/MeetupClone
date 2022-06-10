@@ -10,9 +10,11 @@ public class Member
     public int Id { get; set; }
 
     [Required]
+    [MinLength(2)]
     public string FirstName { get; set; }
 
     [Required]
+    [MinLength(2)]
     public string LastName { get; set; }
 
     [NotMapped]
@@ -25,5 +27,6 @@ public class Member
     }
 
     [Required]
+    [EmailAddress]
     public string Email { get; set; }
 }
