@@ -11,4 +11,6 @@ public class Comment
     
     [Required]
     public string Text { get; set; }
+
+    public List<Member> LikedBy { get; set; }
 }
